@@ -8,9 +8,9 @@
     </title>
     <meta
       name="description"
-      content="Verified off-market investor deal board for Pensacola, Escambia, and Santa Rosa County. Real wholesalers list real deals; verified buyers act on them quickly."
+      content="A verified off-market deal board for the Florida Panhandle. Real wholesalers list real deals; verified buyers act on them quickly."
     />
-    <meta name="theme-color" content="#0f2742" />
+    <meta name="theme-color" content="#2563eb" />
     <meta name="robots" content="noindex,nofollow" />
 
     <meta property="og:type" content="website" />
@@ -23,20 +23,32 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" href="/landing/assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
     <link rel="stylesheet" href="/landing/css/main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="Panhandle Investor Exchange home">
-          <span class="brand-mark" aria-hidden="true">PIE</span>
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20V4h7a5 5 0 010 10H8v6H4z" fill="currentColor"/>
+            </svg>
+          </span>
           <span class="brand-name">Panhandle Investor Exchange</span>
         </a>
         <nav class="header-nav">
           <a href="#sample-deals">Deals</a>
           <a href="#how-it-works">How it works</a>
           <a href="#what-listed">What's listed</a>
-          <a href="#waitlist" class="btn btn-ghost">Join waitlist</a>
+          <a href="#waitlist" class="btn btn-primary btn-sm">Join waitlist</a>
         </nav>
       </div>
     </header>
@@ -45,216 +57,247 @@
       <!-- ============== HERO ============== -->
       <section class="hero">
         <div class="container hero-inner">
-          <p class="eyebrow">Pensacola &middot; Escambia &middot; Santa Rosa</p>
-          <h1>The verified off-market deal board for the Florida Panhandle.</h1>
+          <span class="pill pill-soft">
+            <span class="pill-dot" aria-hidden="true"></span>
+            Now forming &middot; founding access
+          </span>
+          <h1 class="display">
+            The verified off-market deal board for the
+            <span class="accent">Florida Panhandle</span>.
+          </h1>
           <p class="lead">
             Real wholesalers list real deals with the numbers buyers actually
             need. Verified buyers get organized access, deadlines, and the data
             to underwrite in minutes &mdash; not Facebook posts.
           </p>
           <div class="hero-cta">
-            <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
-            <a href="#sample-deals" class="btn btn-link"
-              >See example deals &rarr;</a
-            >
+            <a href="#waitlist" class="btn btn-primary btn-lg">Join the waitlist</a>
+            <a href="#sample-deals" class="btn btn-ghost btn-lg">See example deals</a>
           </div>
-          <p class="hero-meta">Launching soon. Founding access is limited.</p>
+          <p class="hero-meta">
+            Pensacola &middot; Escambia &middot; Santa Rosa
+          </p>
         </div>
       </section>
 
       <!-- ============== SAMPLE DEALS ============== -->
-      <section id="sample-deals" class="sample-deals">
+      <section id="sample-deals" class="section">
         <div class="container">
           <p class="section-eyebrow">Example listings</p>
-          <h2>This is what a real deal on the platform looks like.</h2>
+          <h2 class="section-title">
+            This is what a real deal on the platform looks like.
+          </h2>
           <p class="section-lead">
-            Every listing arrives with the inputs needed to make a fast yes/no.
-            Examples below are mock data for demonstration &mdash; not actual
-            properties.
+            Every listing arrives with the inputs needed to make a fast
+            yes/no. Examples below are mock data &mdash; not actual properties.
           </p>
 
           <div class="deal-grid">
-            <article class="deal-card">
+            <article class="deal-card tier-verified">
               <header class="deal-card-head">
-                <div class="deal-tags">
-                  <span class="tag tag-verified">Contract verified</span>
-                  <span class="tag tag-strategy">Heavy rehab flip</span>
-                </div>
-                <div class="deal-area">
-                  <span class="deal-area-name">Ensley</span>
-                  <span class="deal-area-sub"
-                    >West Pensacola &middot; Escambia</span
-                  >
-                </div>
+                <span class="pill pill-verified">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 .5l1.96 4.51 4.9.42-3.7 3.24 1.1 4.83L8 11.06 3.74 13.5l1.1-4.83L1.14 5.43l4.9-.42L8 .5z" fill="currentColor"/>
+                  </svg>
+                  Contract verified
+                </span>
+                <h3 class="deal-area">Ensley</h3>
+                <p class="deal-sub">West Pensacola &middot; Escambia County</p>
               </header>
               <div class="deal-card-body">
                 <p class="deal-specs">
                   3 BD &middot; 2 BA &middot; 1,440 sqft &middot; 1980s SFR
-                  &middot; <strong>Vacant</strong>
+                  &middot; <strong>vacant</strong>
                 </p>
-
                 <dl class="deal-numbers">
-                  <div><dt>Buyer price</dt><dd>$128,000</dd></div>
-                  <div><dt>ARV range</dt><dd>$215K &ndash; $245K</dd></div>
-                  <div><dt>Rehab range</dt><dd>$50K &ndash; $65K</dd></div>
+                  <div>
+                    <dt>Buyer price</dt>
+                    <dd>$128,000</dd>
+                  </div>
+                  <div>
+                    <dt>ARV range</dt>
+                    <dd>$215K &ndash; $245K</dd>
+                  </div>
+                  <div>
+                    <dt>Rehab range</dt>
+                    <dd>$50K &ndash; $65K</dd>
+                  </div>
                   <div class="emphasis">
                     <dt>Est. spread</dt>
                     <dd>$30K &ndash; $55K</dd>
                   </div>
                 </dl>
-
                 <ul class="deal-meta">
-                  <li>Closes in <strong>14 days</strong></li>
-                  <li>Lockbox access</li>
+                  <li>Heavy rehab flip</li>
+                  <li>14&nbsp;day close</li>
                   <li>Assignable</li>
                 </ul>
               </div>
               <footer class="deal-card-foot">
-                <a class="deal-cta" href="#waitlist"
-                  >View deal packet &rarr;</a
+                <a class="link-arrow" href="#waitlist"
+                  >Open deal packet <span aria-hidden="true">&rarr;</span></a
                 >
               </footer>
             </article>
 
-            <article class="deal-card">
+            <article class="deal-card tier-packet">
               <header class="deal-card-head">
-                <div class="deal-tags">
-                  <span class="tag tag-packet">Reviewed packet</span>
-                  <span class="tag tag-strategy">BRRRR / Rental</span>
-                </div>
-                <div class="deal-area">
-                  <span class="deal-area-name">Pace</span>
-                  <span class="deal-area-sub">Santa Rosa County</span>
-                </div>
+                <span class="pill pill-packet">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 .5l1.96 4.51 4.9.42-3.7 3.24 1.1 4.83L8 11.06 3.74 13.5l1.1-4.83L1.14 5.43l4.9-.42L8 .5z" fill="currentColor"/>
+                  </svg>
+                  Reviewed packet
+                </span>
+                <h3 class="deal-area">Pace</h3>
+                <p class="deal-sub">Santa Rosa County</p>
               </header>
               <div class="deal-card-body">
                 <p class="deal-specs">
-                  3 BD &middot; 2 BA &middot; 1,680 sqft &middot; Brick ranch
-                  &middot; <strong>Tenant-occupied</strong>
+                  3 BD &middot; 2 BA &middot; 1,680 sqft &middot; brick ranch
+                  &middot; <strong>tenant-occupied</strong>
                 </p>
-
                 <dl class="deal-numbers">
-                  <div><dt>Buyer price</dt><dd>$185,000</dd></div>
-                  <div><dt>ARV range</dt><dd>$255K &ndash; $275K</dd></div>
+                  <div>
+                    <dt>Buyer price</dt>
+                    <dd>$185,000</dd>
+                  </div>
+                  <div>
+                    <dt>ARV range</dt>
+                    <dd>$255K &ndash; $275K</dd>
+                  </div>
                   <div>
                     <dt>Rent estimate</dt>
                     <dd>$1,950 &ndash; $2,100/mo</dd>
                   </div>
                   <div class="emphasis">
                     <dt>Pro forma cap</dt>
-                    <dd>~8.5%</dd>
+                    <dd>~ 8.5%</dd>
                   </div>
                 </dl>
-
                 <ul class="deal-meta">
-                  <li>Closes in <strong>21 days</strong></li>
-                  <li>Lease through 2026</li>
-                  <li>Light cosmetic rehab</li>
+                  <li>BRRRR / rental</li>
+                  <li>21&nbsp;day close</li>
+                  <li>Lease 2026</li>
                 </ul>
               </div>
               <footer class="deal-card-foot">
-                <a class="deal-cta" href="#waitlist"
-                  >View deal packet &rarr;</a
+                <a class="link-arrow" href="#waitlist"
+                  >Open deal packet <span aria-hidden="true">&rarr;</span></a
                 >
               </footer>
             </article>
 
-            <article class="deal-card">
+            <article class="deal-card tier-submitted">
               <header class="deal-card-head">
-                <div class="deal-tags">
-                  <span class="tag tag-submitted">Submitted</span>
-                  <span class="tag tag-strategy">Mobile + land</span>
-                </div>
-                <div class="deal-area">
-                  <span class="deal-area-name">Cantonment</span>
-                  <span class="deal-area-sub">North Escambia</span>
-                </div>
+                <span class="pill pill-submitted">Submitted</span>
+                <h3 class="deal-area">Cantonment</h3>
+                <p class="deal-sub">North Escambia County</p>
               </header>
               <div class="deal-card-body">
                 <p class="deal-specs">
                   3 BD &middot; 2 BA &middot; doublewide on
                   <strong>1.2 acres</strong>
                 </p>
-
                 <dl class="deal-numbers">
-                  <div><dt>Buyer price</dt><dd>$95,000</dd></div>
-                  <div><dt>ARV range</dt><dd>$145K &ndash; $165K</dd></div>
-                  <div><dt>Rehab range</dt><dd>$15K &ndash; $22K</dd></div>
+                  <div>
+                    <dt>Buyer price</dt>
+                    <dd>$95,000</dd>
+                  </div>
+                  <div>
+                    <dt>ARV range</dt>
+                    <dd>$145K &ndash; $165K</dd>
+                  </div>
+                  <div>
+                    <dt>Rehab range</dt>
+                    <dd>$15K &ndash; $22K</dd>
+                  </div>
                   <div class="emphasis">
                     <dt>Est. spread</dt>
                     <dd>$30K &ndash; $50K</dd>
                   </div>
                 </dl>
-
                 <ul class="deal-meta">
-                  <li>Closes in <strong>30 days</strong></li>
-                  <li>Vacant &middot; drive-by ok</li>
-                  <li>Seller finance possible</li>
+                  <li>Mobile + land</li>
+                  <li>30&nbsp;day close</li>
+                  <li>Seller finance</li>
                 </ul>
               </div>
               <footer class="deal-card-foot">
-                <a class="deal-cta" href="#waitlist"
-                  >View deal packet &rarr;</a
+                <a class="link-arrow" href="#waitlist"
+                  >Open deal packet <span aria-hidden="true">&rarr;</span></a
                 >
               </footer>
             </article>
           </div>
 
           <p class="section-foot-note">
-            The colored tag in the top-left tells you how far each deal has been
-            vetted &mdash;
-            <a href="#verification">see the three verification tiers below</a>.
+            The badge on each card shows verification status.
+            <a href="#verification">See the three tiers below.</a>
           </p>
         </div>
       </section>
 
       <!-- ============== HOW IT WORKS ============== -->
-      <section id="how-it-works" class="how">
+      <section id="how-it-works" class="section section-tinted">
         <div class="container">
           <p class="section-eyebrow">How it works</p>
-          <h2>From submitted to under contract, on rails.</h2>
+          <h2 class="section-title">
+            From submitted to under contract, on rails.
+          </h2>
 
-          <ol class="how-steps">
-            <li>
-              <span class="step-num">1</span>
+          <div class="how-steps">
+            <div class="how-step">
+              <span class="how-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12h6m-3-3v6m9-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
               <h3>Wholesalers submit deals</h3>
               <p>
                 Address, contract proof, ARV support, photos, rehab notes,
                 deadlines, and access &mdash; all in one structured submission.
-                No more &quot;DM me for info.&quot;
+                No more &ldquo;DM me for info.&rdquo;
               </p>
-            </li>
-            <li>
-              <span class="step-num">2</span>
+            </div>
+            <div class="how-step">
+              <span class="how-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
               <h3>Each deal gets a tier</h3>
               <p>
                 Submitted, Contract verified, or Reviewed Deal Packet. The tier
                 tells buyers exactly what's been checked before they spend an
                 hour underwriting.
               </p>
-            </li>
-            <li>
-              <span class="step-num">3</span>
+            </div>
+            <div class="how-step">
+              <span class="how-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
               <h3>Verified buyers act</h3>
               <p>
                 Buyers filter by area, strategy, and budget. They review the
                 packet, save the deal, and submit interest privately. The
                 wholesaler sees who's serious.
               </p>
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- ============== VERIFICATION TIERS ============== -->
-      <section id="verification" class="tiers">
+      <section id="verification" class="section">
         <div class="container">
           <p class="section-eyebrow">Verification tiers</p>
-          <h2>You always know what's been checked.</h2>
+          <h2 class="section-title">You always know what's been checked.</h2>
 
           <div class="tier-grid">
             <article class="tier-card tier-submitted">
-              <span class="tier-badge">Submitted</span>
+              <span class="pill pill-submitted">Submitted</span>
               <h3>Not independently reviewed</h3>
               <p>
                 Submitted by a wholesaler but not yet vetted. Numbers and claims
@@ -264,7 +307,12 @@
             </article>
 
             <article class="tier-card tier-verified">
-              <span class="tier-badge">Contract verified</span>
+              <span class="pill pill-verified">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M8 .5l1.96 4.51 4.9.42-3.7 3.24 1.1 4.83L8 11.06 3.74 13.5l1.1-4.83L1.14 5.43l4.9-.42L8 .5z" fill="currentColor"/>
+                </svg>
+                Contract verified
+              </span>
               <h3>Contract or marketing rights confirmed</h3>
               <p>
                 We've confirmed the submitter has a signed contract, JV
@@ -273,8 +321,13 @@
               </p>
             </article>
 
-            <article class="tier-card tier-packet">
-              <span class="tier-badge">Reviewed packet</span>
+            <article class="tier-card tier-packet featured">
+              <span class="pill pill-packet">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M8 .5l1.96 4.51 4.9.42-3.7 3.24 1.1 4.83L8 11.06 3.74 13.5l1.1-4.83L1.14 5.43l4.9-.42L8 .5z" fill="currentColor"/>
+                </svg>
+                Reviewed packet
+              </span>
               <h3>Comps, rehab, and risks reviewed</h3>
               <p>
                 Our team reviews comps, ARV range, rehab estimate, rental
@@ -287,12 +340,11 @@
       </section>
 
       <!-- ============== WHAT CAN BE LISTED ============== -->
-      <section id="what-listed" class="listings">
+      <section id="what-listed" class="section section-tinted">
         <div class="container">
           <p class="section-eyebrow">What can be listed</p>
-          <h2>
-            If it's an off-market opportunity in the Panhandle, it has a home
-            here.
+          <h2 class="section-title">
+            If it's an off-market opportunity in the Panhandle, it has a home here.
           </h2>
 
           <div class="listing-grid">
@@ -357,10 +409,12 @@
       </section>
 
       <!-- ============== DEAL PACKET ANATOMY ============== -->
-      <section class="packet">
+      <section class="section">
         <div class="container">
           <p class="section-eyebrow">Deal packet anatomy</p>
-          <h2>Everything you need to underwrite in one place.</h2>
+          <h2 class="section-title">
+            Everything you need to underwrite in one place.
+          </h2>
           <p class="section-lead">
             A Reviewed Deal Packet is structured the same way every time
             &mdash; so you stop hunting for missing info.
@@ -368,7 +422,7 @@
 
           <div class="packet-grid">
             <div class="packet-block">
-              <h3>1. Snapshot</h3>
+              <h3>Snapshot</h3>
               <ul>
                 <li>Address &amp; area tag</li>
                 <li>Deal type (assignment / double close / JV)</li>
@@ -379,7 +433,7 @@
               </ul>
             </div>
             <div class="packet-block">
-              <h3>2. Investment fit</h3>
+              <h3>Investment fit</h3>
               <ul>
                 <li>Best-fit strategy (flip, BRRRR, rental, STR, land hold)</li>
                 <li>Skill level needed (cosmetic vs full rehab)</li>
@@ -388,17 +442,17 @@
               </ul>
             </div>
             <div class="packet-block">
-              <h3>3. Numbers &amp; comps</h3>
+              <h3>Numbers &amp; comps</h3>
               <ul>
                 <li>Recent comparable sales (with addresses)</li>
                 <li>Active and pending comps</li>
                 <li>Rehab line items by category</li>
                 <li>Rent estimate &amp; pro forma (for rentals)</li>
-                <li>Subject-to / seller-finance terms (if applicable)</li>
+                <li>Subject-to / seller-finance terms</li>
               </ul>
             </div>
             <div class="packet-block">
-              <h3>4. Risks &amp; red flags</h3>
+              <h3>Risks &amp; red flags</h3>
               <ul>
                 <li>Foundation, roof, electrical, plumbing notes</li>
                 <li>Flood zone status</li>
@@ -408,12 +462,12 @@
               </ul>
             </div>
             <div class="packet-block">
-              <h3>5. Documents</h3>
+              <h3>Documents</h3>
               <ul>
                 <li>Redacted contract or marketing rights</li>
                 <li>Photos (interior, exterior, problem areas)</li>
                 <li>Disclosures from seller (if available)</li>
-                <li>Title status / preliminary title (if opened)</li>
+                <li>Title status / preliminary title</li>
               </ul>
             </div>
             <div class="packet-block packet-block-cta">
@@ -429,14 +483,14 @@
       </section>
 
       <!-- ============== FOR BUYERS / FOR WHOLESALERS ============== -->
-      <section class="split">
+      <section class="section section-tinted">
         <div class="container">
           <p class="section-eyebrow">Two sides, one platform</p>
-          <h2>Built so both sides actually get value.</h2>
+          <h2 class="section-title">Built so both sides get value.</h2>
 
           <div class="split-grid">
             <article class="split-col">
-              <h3>For buyers</h3>
+              <h3 class="split-side">For buyers</h3>
               <ul class="split-list">
                 <li>
                   <strong>Filtered to your buy-box</strong> &mdash; area,
@@ -444,7 +498,7 @@
                 </li>
                 <li>
                   <strong>Real numbers</strong> &mdash; buyer price, ARV range,
-                  rehab range, spread. No coy &quot;DM for price.&quot;
+                  rehab range, spread. No coy &ldquo;DM for price.&rdquo;
                 </li>
                 <li>
                   <strong>Verified providers</strong> &mdash; contract or
@@ -466,7 +520,7 @@
             </article>
 
             <article class="split-col">
-              <h3>For wholesalers</h3>
+              <h3 class="split-side">For wholesalers</h3>
               <ul class="split-list">
                 <li>
                   <strong>Verified cash buyers</strong> &mdash; proof of funds
@@ -478,7 +532,7 @@
                 </li>
                 <li>
                   <strong>Verification tier badge</strong> &mdash; cuts
-                  daisy-chain confusion, builds your credibility over time.
+                  daisy-chain confusion, builds credibility over time.
                 </li>
                 <li>
                   <strong>Buyer-box matching</strong> &mdash; your deal gets in
@@ -499,13 +553,13 @@
       </section>
 
       <!-- ============== TRUST ============== -->
-      <section id="trust" class="trust">
+      <section id="trust" class="section">
         <div class="container">
           <p class="section-eyebrow">Why trust is the product</p>
-          <h2>
+          <h2 class="section-title">
             Pensacola doesn't need more deal volume. It needs less noise.
           </h2>
-          <p class="trust-lead">
+          <p class="section-lead">
             Facebook groups and mass-blast email lists already give you volume.
             What's missing is a place where the deal is real, the seller is
             real, and the buyer can close. That's what we're building.
@@ -517,7 +571,7 @@
             </li>
             <li>
               <strong>Hyperlocal filters.</strong> Ensley, Warrington,
-              Cantonment, Pace, Milton, Navarre &mdash; not &quot;Florida.&quot;
+              Cantonment, Pace, Milton, Navarre &mdash; not &ldquo;Florida.&rdquo;
             </li>
             <li>
               <strong>Credibility scores</strong> on both sides, built from
@@ -527,77 +581,82 @@
               <strong>Daisy-chain protection</strong> via verified contract or
               marketing rights.
             </li>
-            <li><strong>POF gate</strong> on the buyer pool.</li>
+            <li>
+              <strong>POF gate</strong> on the buyer pool.
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- ============== WAITLIST ============== -->
-      <section id="waitlist" class="waitlist">
-        <div class="container waitlist-inner">
-          <div class="waitlist-copy">
-            <h2>Be on the list when we open.</h2>
-            <p>
-              Founding access goes to the first investors and wholesalers who
-              sign up. We'll email you once when buyer accounts open and when
-              the first verified deals are posted.
-            </p>
-            <p class="waitlist-note">
-              No spam. No selling your info. One email when we're ready.
-            </p>
+      <section id="waitlist" class="section waitlist">
+        <div class="container">
+          <div class="waitlist-card">
+            <div class="waitlist-copy">
+              <p class="section-eyebrow">Founding access</p>
+              <h2 class="section-title">Be on the list when we open.</h2>
+              <p>
+                Founding access goes to the first investors and wholesalers who
+                sign up. We'll email you once when buyer accounts open and when
+                the first verified deals are posted.
+              </p>
+              <p class="waitlist-note">
+                No spam. No selling your info. One email when we're ready.
+              </p>
+            </div>
+
+            <form id="waitlist-form" class="waitlist-form" novalidate>
+              <div class="field">
+                <label for="wl-name">Name</label>
+                <input
+                  id="wl-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  maxlength="80"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="field">
+                <label for="wl-email">Email</label>
+                <input
+                  id="wl-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  maxlength="120"
+                  placeholder="you@example.com"
+                />
+              </div>
+
+              <div class="field field-hp" aria-hidden="true">
+                <label for="wl-company">Company (leave blank)</label>
+                <input
+                  id="wl-company"
+                  name="company"
+                  type="text"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
+              <button
+                id="wl-submit"
+                type="submit"
+                class="btn btn-primary btn-block btn-lg"
+              >
+                Join the waitlist
+              </button>
+              <p
+                id="wl-status"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
           </div>
-
-          <form id="waitlist-form" class="waitlist-form" novalidate>
-            <div class="field">
-              <label for="wl-name">Name</label>
-              <input
-                id="wl-name"
-                name="name"
-                type="text"
-                autocomplete="name"
-                required
-                maxlength="80"
-                placeholder="Your full name"
-              />
-            </div>
-            <div class="field">
-              <label for="wl-email">Email</label>
-              <input
-                id="wl-email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-                maxlength="120"
-                placeholder="you@example.com"
-              />
-            </div>
-
-            <div class="field field-hp" aria-hidden="true">
-              <label for="wl-company">Company (leave blank)</label>
-              <input
-                id="wl-company"
-                name="company"
-                type="text"
-                tabindex="-1"
-                autocomplete="off"
-              />
-            </div>
-
-            <button
-              id="wl-submit"
-              type="submit"
-              class="btn btn-primary btn-block"
-            >
-              Join the waitlist
-            </button>
-            <p
-              id="wl-status"
-              class="form-status"
-              role="status"
-              aria-live="polite"
-            ></p>
-          </form>
         </div>
       </section>
     </main>
@@ -605,7 +664,11 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <span class="brand-mark" aria-hidden="true">PIE</span>
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20V4h7a5 5 0 010 10H8v6H4z" fill="currentColor"/>
+            </svg>
+          </span>
           <span>Panhandle Investor Exchange</span>
         </div>
         <p class="footer-legal">
@@ -619,8 +682,8 @@
           represent real properties.
         </p>
         <p class="footer-meta">
-          &copy; <span id="footer-year">2026</span> Panhandle Investor
-          Exchange. Pensacola, FL.
+          &copy; <span id="footer-year">2026</span> Panhandle Investor Exchange.
+          Pensacola, FL.
         </p>
       </div>
     </footer>
