@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Currently disallowing all crawlers because the site is a scaffold placeholder.
+# When real landing content lands, replace with an allow policy and a real sitemap URL.

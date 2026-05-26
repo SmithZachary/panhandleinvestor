@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// Panhandle Investor Exchange — Cloud Storage security rules
+//
+// Posture: default deny. Photos, contracts, and POF documents are sensitive.
+// POF documents must be admin-readable only. Deal photos must be gated by
+// buyer subscription tier. Public URLs are never used — always signed URLs.
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
