@@ -66,3 +66,12 @@ build/
 
 # Logs
 *.log
+
+# Firebase init drops a default boilerplate at public/ when hosting is initialized.
+# Our actual landing site lives in landing/ — public/ is unused scaffolding.
+public/
+
+# Firebase agent-skills tooling
+.agents/
+skills-lock.json
+

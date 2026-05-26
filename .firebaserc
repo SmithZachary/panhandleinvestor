@@ -1,15 +1,15 @@
 {
   "projects": {
-    "default": "REPLACE_WITH_FIREBASE_PROJECT_ID"
+    "default": "panhandle-investor"
   },
   "targets": {
-    "REPLACE_WITH_FIREBASE_PROJECT_ID": {
+    "panhandle-investor": {
       "hosting": {
         "landing": [
-          "REPLACE_WITH_LANDING_SITE_ID"
+          "panhandleinvestorexchange"
         ],
         "app": [
-          "REPLACE_WITH_APP_SITE_ID"
+          "panhandle-investor"
         ]
       }
     }

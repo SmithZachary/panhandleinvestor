@@ -3,12 +3,33 @@ rules_version = '2';
 // Panhandle Investor Exchange — Firestore security rules
 //
 // Posture: default deny. Every collection must have an explicit allow rule.
-// Buyer/wholesaler/admin role checks and tier gating will live here.
+// Buyer / wholesaler / admin role checks and tier gating will live here.
 // Exact addresses and POF document references must never be readable by
 // non-verified or non-subscribed buyers — enforced at the rules layer, not UI.
 
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    // Validation for landing-page waitlist submissions.
+    function isValidWaitlistEntry(data) {
+      return data.keys().hasOnly(['name', 'email', 'source', 'path', 'referrer', 'userAgent', 'createdAt'])
+        && data.keys().hasAll(['name', 'email', 'source', 'createdAt'])
+        && data.name is string && data.name.size() >= 2 && data.name.size() <= 80
+        && data.email is string && data.email.size() <= 120 && data.email.matches('.+@.+\\..+')
+        && data.source == 'landing'
+        && data.createdAt == request.time
+        && (!('userAgent' in data) || (data.userAgent is string && data.userAgent.size() <= 500))
+        && (!('path' in data) || (data.path is string && data.path.size() <= 200))
+        && (!('referrer' in data) || data.referrer == null || (data.referrer is string && data.referrer.size() <= 500));
+    }
+
+    match /waitlist/{docId} {
+      // Public landing form can create entries (subject to strict validation).
+      // Reading, updating, and deleting are admin-only — handled out of band
+      // until Auth/admin roles land.
+      allow create: if isValidWaitlistEntry(request.resource.data);
+      allow read, update, delete: if false;
+    }
 
     match /{document=**} {
       allow read, write: if false;
