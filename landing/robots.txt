@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /
 
-# Currently disallowing all crawlers because the site is a scaffold placeholder.
-# When real landing content lands, replace with an allow policy and a real sitemap URL.
+# Indexing is deliberately blocked until a custom domain is wired up.
+# Indexing the .web.app URL first would create duplicate-content issues
+# when the custom domain goes live. Flip this and `meta name="robots"`
+# in index.html together when the production domain is configured.
