@@ -527,6 +527,128 @@ strong {
   font-weight: 600;
 }
 
+/* Wholesaler vs AI comparison table inside deal cards */
+.comparison {
+  display: grid;
+  gap: 0;
+  padding: 14px 16px 12px;
+  background: var(--bg-tint);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  font-variant-numeric: tabular-nums;
+}
+.comparison-header,
+.comparison-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 8px;
+  align-items: baseline;
+}
+.comparison-header {
+  padding-bottom: 8px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.comparison-header span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+.comparison-header span:nth-child(2),
+.comparison-header span:nth-child(3) {
+  text-align: right;
+}
+.comparison-row {
+  padding-block: 7px;
+  border-bottom: 1px dashed var(--line);
+  font-size: 0.86rem;
+}
+.comparison-row:last-child {
+  border-bottom: none;
+}
+.comparison-label {
+  color: var(--muted);
+  font-weight: 500;
+}
+.comparison-w,
+.comparison-ai {
+  text-align: right;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.comparison-ai {
+  position: relative;
+}
+.comparison-ai.is-match::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-right: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.comparison-ai.is-diff {
+  color: var(--amber);
+}
+.comparison-ai.is-diff::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber);
+  margin-right: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  opacity: 0.7;
+}
+.comparison-ai.is-flag {
+  color: var(--amber);
+  font-weight: 700;
+}
+.comparison-ai.is-flag::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber);
+  margin-right: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.comparison-row.emphasis {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  border-bottom: none;
+  font-size: 0.95rem;
+}
+.comparison-row.emphasis .comparison-label {
+  color: var(--text);
+  font-weight: 600;
+}
+.comparison-row.emphasis .comparison-w {
+  color: var(--primary);
+  font-weight: 700;
+}
+.comparison-row.emphasis .comparison-ai.is-match {
+  color: var(--primary);
+  font-weight: 700;
+}
+.comparison-row.emphasis .comparison-ai.is-diff,
+.comparison-row.emphasis .comparison-ai.is-flag {
+  font-weight: 700;
+}
+
 .deal-numbers {
   margin: 0;
   padding: 16px 18px;
